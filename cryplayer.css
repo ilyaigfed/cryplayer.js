@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+#cry_player {
+    position: fixed;
+    height: 60px;
+    background: rgba(73, 75, 70, 0.7);
+    top: 100%;
+    left: 0;
+    margin-top: -63px;
+    width: 100%;
+    border-bottom: 3px solid rgba(255,19,31,0.7);
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+}
+
+#cry_player:hover {
+    background: rgba(243, 245, 234, 0.7);
+}
+
+#cry_player:hover .cp-time-block,
+#cry_player:hover .cp-options,
+#cry_player:hover .cp-about-track #name_track {
+    color: black;
+}
+
+.cry-player-wrapper {
+    width: 1280px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cp-time-block {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Exo 2";
+    color: white;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 1s;
+}
+
+.cp-time-block > #long_track {
+    width: 75%;
+    height: 3px;
+    border-radius: 2px;
+    background: rgba(13, 15, 12, 0.75);
+    cursor: pointer;
+}
+
+.cp-time-block > #long_track > #long_count_track {
+    width: 0;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+
+.cp-options {
+    display: flex;
+    width: 15%;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    transition: all 1s;
+}
+
+.cp-options > * {
+    cursor: pointer;
+}
+
+.cp-options-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+}
+
+.cp-options > .cp-options-list > #play_track,
+.cp-options > .cp-options-list > #pause_track {
+    font-size: 20px;
+}
+
+.cp-options > #volume_on {
+    display: none;
+    color: rgba(0, 0, 0, 0.30);
+}
+
+.cp-about-track {
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cp-about-track > #image_track {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background: rgba(13, 15, 12, 0.75);
+}
+
+.cp-about-track > #name_track {
+    font-family: "Exo 2";
+    color: white;
+    transition: all 1s;
+}
